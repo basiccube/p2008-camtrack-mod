@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "Lights/White"
+	"$translucent" 1
+	"$surfaceprop" "glass"
+	"$nodecal" "1"
+}

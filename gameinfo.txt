@@ -1,0 +1,31 @@
+"GameInfo"
+{
+	"game"		"Project 2008"
+	"title"		"Aperture"
+	"type"		"singleplayer_only"
+	"GameData"	"aperture.fgd"
+	
+	"SupportsDX8"   "0"
+	
+	"FileSystem"
+	{
+		"SteamAppId"	"630"
+		"ToolsAppId"	"211"
+		
+		"SearchPaths"
+		{
+			"Game"	"|gameinfo_path|." 					// Mod content
+			"Game"	"|gameinfo_path|../p2008" 			// Project 2008 Campaign content
+			"Game"	"|gameinfo_path|../overrides" 		// Overrides for other VPKs (other games mostly)
+			"Game"	"|gameinfo_path|../aperture"		// F-Stop content from 852_0
+			
+			"Game"	"|gameinfo_path|../mounts/portal"
+			"Game"	"|gameinfo_path|../mounts/tf"
+			"Game"	"|gameinfo_path|../mounts/ep2"
+			"Game"	"|gameinfo_path|../mounts/hl2"
+			
+			"Game"	"core"								// Renamed swarm_base
+			"Game"	"platform"
+		}
+	}
+}

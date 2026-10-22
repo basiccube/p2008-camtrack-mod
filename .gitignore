@@ -1,0 +1,11 @@
+maps/
+SAVE/
+
+demoheader.tmp
+modelsounds.cache
+stats.txt
+voice_ban.dt
+
+cfg/config.cfg
+cfg/server_blacklist.txt
+cfg/video.txt

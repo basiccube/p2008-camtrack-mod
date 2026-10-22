@@ -1,0 +1,42 @@
+"Refract"
+{
+	"$normalmap" "water/tfwater001_normal"
+	"$bumpmap" "water/tfwater001_normal"
+	"%keywords" "aperture"
+	
+	$refractamount 0.1
+	"$refracttint" "[.74 .89 .98]"
+	$bluramount 1
+	"$translucent" "1"
+	
+	$envmap "env_cubemap"
+	"$envmaptint" "[.74 .89 .98]"
+	
+	//"$basetexture" "water/water_island"
+
+	"%compilewater" 1
+	"$surfaceprop" "water"
+
+	// This is used to make the water refraction visible from below.
+	"$bottommaterial" "water/water_refract_dynamic_beneath"
+
+	// This is needed for the proxy which animates the normal map
+	"$bumpframe" "0"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$normalmap"
+			"animatedtextureframenumvar" "$bumpframe"
+			"animatedtextureframerate" 30.00
+		}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$bumptransform"
+			"texturescrollrate" .05
+			"texturescrollangle" 45.00
+		}
+	}
+}
